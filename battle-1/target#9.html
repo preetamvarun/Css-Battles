@@ -1,0 +1,48 @@
+<div class = "m"></div>
+<div class = "l"></div>
+<div class = "r"></div>
+<style>
+  
+  body{
+    background : #222730;
+  }
+  *{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+  }
+  .l,.r{
+    height : 150px;
+    width : 150px;
+    background : #4CAAB3;
+    position : absolute;
+    top : 50%;
+    z-index : 1;
+    transform : translateY(-50%);
+  }
+  .r{
+    right : 0;
+  }
+  .m{
+    z-index : 2;
+    height : 150px;
+    width : 150px;
+    background : #4CAAB3;
+    position : relative;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    box-shadow : 0px 0px 0px 50px #222730;
+  }
+  .m::after{
+    position : absolute;
+    content : "";
+    background : #393E46;
+    height : 50px;
+    width : 50px;
+    border-radius : 100%;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+  }
+</style>

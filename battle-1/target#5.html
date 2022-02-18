@@ -1,0 +1,38 @@
+<div></div>
+<div class = "x"></div>
+<div class = "y"></div>
+<style>
+  body{
+    display : flex;
+    height : 100vh;
+    justify-content : center;
+    align-items : center;
+    background : #0B2429;
+  }
+  div {
+    position : relative;
+    background: blue;
+    border-width : 60px;
+    border-style : solid;
+    border-color : #998235;
+    border-radius : 100%;
+    border-top-right-radius : 2%;
+    top : -8;
+  }
+  .x{
+    position : absolute;
+    border-radius : 100%;
+    top : 30;
+    border-color : #F3AC3C;
+    z-index : -1;
+    transform : translateX(50%);
+  }
+  .y{
+    position : absolute;
+    top : 150;
+    border-color : #F3AC3C;
+    border-top-right-radius : 1%;
+    transform : translateX(-50%);
+    z-index : 2;
+  }
+</style>
