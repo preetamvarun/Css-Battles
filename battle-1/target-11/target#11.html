@@ -1,0 +1,73 @@
+<div class = "a"></div>
+<div class = "b"></div>
+<div class = "M"></div>
+
+<style>
+  
+  *{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+  }
+  
+  body{
+    display : grid;
+    place-items : center;
+    background: #191210;
+  }
+  
+  .a,.b{
+    height : 50px;
+    width : 100px;
+    background : #191210;
+    position : absolute;
+    border : 20px solid #ECA03D;
+  }
+  
+  .a{
+    left : 50;
+    top : 150;
+    border-radius : 0px 0px 100px 100px;
+    border-top : 0;
+  }
+  
+  .b{
+    top : 100;
+    right : 50;
+    border-radius : 100px 100px 0px 0px;
+    border-bottom : 0;
+  }
+  
+  .M{
+    position : relative;
+    width: 140px;
+    height: 140px;
+    border-radius : 100%;
+    background : #ECA03D;
+  }
+  
+  .M::after{
+    position : absolute;
+    content : "";
+    width : 100px;
+    height : 100px;
+    border-radius : 100%;
+    background : #191210;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+  }
+  
+  .M::before{
+    position : absolute;
+    content : "";
+    width : 50px;
+    height : 50px;
+    background : #84271C;
+    top : 50%;
+    left : 50%;
+      transform : translate(-50%,-50%);
+    z-index : 2;
+    border-radius : 100%;
+  }
+</style>

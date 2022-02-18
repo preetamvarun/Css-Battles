@@ -1,0 +1,29 @@
+<div class = "m">
+    <div class = "o"></div>
+   <div class = "t"></div>
+   <div class = "x"></div>
+   </div>
+   <style>
+     *{
+       margin : 0rem;
+       padding : 0rem;
+       box-sizing : border-box;
+     }
+     .m{
+       display : flex;
+       justify-content : center;
+       align-items : center;
+       height : 100vh;
+       background-color : #62306D;
+     }
+     .o,.t,.x{
+       border : 50px solid #F7EC7D;
+       border-radius : 100% 100% 0px 0px;
+     }
+     .o,.x{
+       transform : rotate(180deg) translateY(-50%);
+     }
+     .t{
+       transform : translateY(-50%);
+     }
+   </style>
