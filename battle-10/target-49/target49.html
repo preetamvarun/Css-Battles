@@ -1,0 +1,54 @@
+<!-- t is the traingle
+b is basement
+b after is the door 
+b before is the horizontal stick -->
+
+<div t>
+</div>
+<div b></div>
+<style>
+  *{
+    margin : 0rem;
+  }
+  body{
+    background : #6592CF;
+  }
+  [t]{
+    width : 0px;
+    margin : 0 auto;
+    border : 20px solid red;
+    border-color : transparent transparent #243D83 transparent;
+    position : absolute;
+    transform : scale(5);
+    left : 45%;
+    top : 10%
+  }
+  [b]{
+    height : 100px;
+    width : 150px;
+    background : #243D83;
+    position : relative;
+    left : 124.5px;
+    top : 50%;
+    border-radius : 0px 0px 10px 10px;
+  }
+  [b]::after,[b]::before{
+    position : absolute;
+    content : "";
+    left : 75.5px;
+    transform : translateX(-50%);
+    background : #EEB850;
+  }
+  [b]::after{
+    bottom : 0;
+    height : 50px;
+    width : 50px;
+    border-radius : 10px 10px 0px 0px;
+  }
+  [b]::before{
+    top : -5;
+    width : 100px;
+    height : 10px;
+    border-radius : 10px;
+  }
+</style>

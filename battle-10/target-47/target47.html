@@ -1,0 +1,78 @@
+<div class = 'M'>
+    <div class = 'ld'></div>
+  </div>
+  <div class = 'tt'></div>
+  <div class = 'tr'></div>
+  <div class = 'tl'></div>
+  <style>
+    body{
+      background : #1A4341;
+    }
+    *{
+      margin : 0;
+    }
+    .tt,.tr,.tl{
+      height : 180px;
+      width : 10px;
+      position : absolute;
+      background : #F3AC3C;
+      border-radius : 10px;
+      top : 50%;
+      left : 50%;
+      transform : translate(-50%,-55.5%);
+      z-index : -1;
+    }
+    
+    .tr,.tl{
+      left : 52.2%;
+      top : 48.5%;
+      transform : translate(-50%,-50%) rotate(60deg);
+    }
+    
+    .tl{
+      top : 51.65%;
+      transform : translate(-50%,-50%) rotate(-60deg);
+    }
+    
+    .M {
+      background : #F3AC3C;
+      height : 100px;
+      width : 100px;
+      border-radius : 50%;
+      position : relative;
+      top : 50%;
+      left : 50%;
+      transform : translate(-50%,-50%); 
+    }
+    
+    .M::before,.M::after,.ld{
+      content : "";
+      position : absolute;
+      background : #998235;
+      border-radius : 100%;
+    }
+    
+    .M::before{
+      height : 20px;
+      width : 20px;
+      bottom : 0;
+      left : 50%;
+      transform : translate(-50%,-75%);
+    }
+    
+    .M::after{
+      height : 30px;
+      width : 30px;
+      top : 20%;
+      left : 20%;
+    }
+    
+    .ld{
+      height : 10px;
+      width : 10px;
+      right : 20%;
+      top : 20%;
+    }
+    
+  </style>
+  
