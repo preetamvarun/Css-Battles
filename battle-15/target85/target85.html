@@ -1,0 +1,42 @@
+<div></div>
+<style>
+  body{
+    background : #D25B70;
+  }
+  *{
+    margin : 0rem;
+  }
+  /*Base Box*/
+  div {
+    width: 100px;
+    height: 100px;
+    background: #F7F3DA;
+    position : relative;
+    top : 150px;
+    left : 150px;
+  }
+  /*top left box*/
+  div::before{
+    position : absolute;
+    content : "";
+    background : #6CB3A9;
+    height : 50px;
+    width : 50px;
+    top : -50px;
+   /* to transform with respect to a fixed point we use transform-origin property */
+    transform-origin : 0% 100%;
+    transform : rotate(-53deg) scale(1.2);
+  }
+  /*top right box*/
+  div::after{
+    position : absolute;
+    content : "";
+    background : #F6DF96;
+    height : 70px;
+    width : 70px;
+    right : 0;
+    top : -70px;
+    transform-origin : 100% 100%;
+    transform : rotate(36.8deg) scale(1.14);
+  }
+</style>
