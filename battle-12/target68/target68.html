@@ -1,0 +1,43 @@
+<div a></div>
+<div b></div>
+<style>
+  *{
+    margin : 0rem;
+  }
+  body{
+    background : #191919;
+  }
+  [a]{
+    position : relative;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+    background: #dd6b4d;
+    border-radius : 100px 100px 16px 16px;
+    background : #E08027;
+  }
+  [a]::after{
+    position : absolute;
+    content : "";
+    background : #824B20;
+    height : 25.5px;
+    width : 50px;
+    bottom : 0;
+    left : 50%;
+    transform : translate(-50%,98%);
+    border-radius : 0px 0px 50px 50px;
+  }
+  [b]{
+    background : #F2AD43;
+    height : 30px;
+    width : 50px;
+    z-index : -1;
+    left : 50%;
+    top : 22%;
+    position : absolute;
+    transform : translateX(-50%);
+    border-radius : 50px 50px 0px 0px;
+  }
+</style>
