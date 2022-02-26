@@ -1,0 +1,28 @@
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  *{
+    margin : 0rem;
+  }
+  body{
+    background : #1A4341;
+    display : flex;
+    justify-content : space-evenly;
+    align-items : flex-end;
+  }
+  div:nth-child(odd),div:nth-child(even){
+    height : 200px;
+    width : 50px;
+    background : #F3AC3C;
+    border-radius: 100px 100px 0px 0px;
+  }
+  div:nth-child(even){
+    background : #998235;
+    position : relative;
+    top : -100px;
+    border-radius : 0px 0px 100px 100px;
+  }
+</style>
