@@ -1,0 +1,42 @@
+<div a></div>
+<div b></div>
+<style>
+  *{
+    margin : 0rem;
+  }
+  
+  body{
+    background : #62306D;
+  }
+  
+  [a],[b]{
+    height : 150px;
+    width : 100px;
+    border-radius : 50px;
+    background : #AA445F;
+    position : relative;
+    top : 16.6%;
+    left : 20%;
+  }
+  
+  [b]{
+    left : 55%;
+    top : -16.7%;
+    background : #E38F66;
+  }
+  
+  [b]::after{
+    background : #F7EC7D;
+    top : 0;
+  }
+  
+  [a]::after,[b]::after{
+    position : absolute;
+    content : "";
+    height : 100px;
+    width : 100px;
+    border-radius : 50px;
+    background : #F7EC7D;
+    bottom : 0;
+  }
+</style>

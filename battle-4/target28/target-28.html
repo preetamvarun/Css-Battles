@@ -1,0 +1,70 @@
+<div a></div>
+<div a1></div>
+<div a2></div>
+<div a3></div>
+<div b></div>
+<div b1></div>
+<div b2></div>
+<div b3></div>
+<style>
+  body{
+    background : #1A4341;
+  }
+  *{
+    margin : 0rem;
+  }
+  [a],[a1],[a2],[a3]{
+    width: 50px;
+    height: 50px;
+    border-radius : 100px;
+    background: #998235;
+    position : relative;
+  }
+  [a]{
+    top : 90px;
+    left : 70px;
+  }
+  [a1]{
+    background : #F3AC3C;
+    top : 110px;
+    left : 210px;
+  }
+  [a2]{
+    left : 280px;
+    top : -10px;
+    background : #F3AC3C;
+  }
+  [a3]{
+    top : 10px;
+    left : 140px;
+  }
+  [b],[b1],[b2],[b3]{
+    position : absolute;
+    background : red;
+    height : 50px;
+    width : 50px;
+    border-radius : 100px 100px 0px 0px;
+  }
+  [b]{
+    top : 90px;
+    left : 140px;
+    background : #F3AC3C;
+  }
+  [b1]{
+    top : 90px;
+    left : 210px;
+    background : #998235;
+  }
+  [b2]{
+    transform : rotate(180deg);
+    top : 160px;
+    left : 70px;
+    background : #F3AC3C;
+  }
+  [b3]{
+    transform : rotate(180deg);
+    top : 160px;
+    right : 70px;
+    background : #998235;
+  }
+</style>

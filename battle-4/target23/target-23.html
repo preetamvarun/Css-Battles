@@ -1,0 +1,35 @@
+<div></div>
+<style>
+  body{
+    background : #F3AC3C;
+    display : grid;
+    place-items : center;
+  }
+  *{
+    margin : 0rem;
+  }
+  div{
+    height : 200px;
+    width : 200px;
+    background : #1A4341;
+    position : relative;
+  }
+  div::after{
+    position : absolute;
+    content : "";
+    height : 100px;
+    width : 100px;
+    background : #998235;
+    bottom : 0;
+  }
+  div::before{
+    position : absolute;
+    content : "";
+    height : 50px;
+    width : 50px;
+    background : #F3AC3C;
+    bottom : 0px;
+    left : 50px;
+    z-index : 1;
+  }
+</style>
