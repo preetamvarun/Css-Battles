@@ -1,0 +1,40 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<div d></div>
+<style>
+  body{
+    background : #191919;
+  }
+  *{
+    margin : 0rem;
+  }
+  [a],[b],[c],[d]{
+    border : 50px solid;
+    border-radius : 100px;
+    position : absolute;
+    transform : rotate(45deg);
+  }
+  [a],[b]{
+    top : 100px;
+  }
+  [c],[d]{
+    left : 150px;
+  }
+  [a]{
+    left : 100px;
+    border-color : #F9E492 transparent transparent #F9E492;
+  }
+  [b]{
+    border-color : transparent #F9E492 #F9E492 transparent;
+    left : 200px;
+  }
+  [c]{
+    border-color : transparent transparent #4F77FF #4F77FF;
+    top : 150px;
+  }
+  [d]{
+    top : 50px;
+    border-color : #4F77FF #4F77FF transparent transparent;
+  }
+</style>
