@@ -1,0 +1,75 @@
+<div b1></div>
+<div b2>
+  <div t></div>
+</div>
+<div n></div>
+<style>
+  body{
+    background : #191919;
+  }
+  *{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+  }
+  [b1]{
+    width: 120px;
+    height: 100px;
+    border-radius : 60px 60px 10px 10px;
+    background : #4F77FF;
+    position : relative;
+    top : 85px;
+    left : 140px;
+  }
+  [b1]::after,[b1]::before{
+    position : absolute;
+    content : "";
+    height : 40px;
+    width : 40px;
+    background : #191919;
+    border-radius : 50px;
+    top : 53px;
+    left : 15px;
+  }
+  [b1]::before{
+    left : 65px;
+  }
+  [b2]{
+    position : relative;
+    width : 80px;
+    height : 30px;
+    background : #4F77FF;
+    border-radius : 0px 0px 20px 20px;
+    top : 85px;
+    left : 160px;
+    overflow : hidden;
+  }
+  [t],[b2]::after,[b2]::before{
+    position : absolute;
+    border : 5px solid #191919;
+    width : 20px;
+    border-radius : 10px;
+    transform : rotate(90deg);
+    top : 25px;
+    left : 30px;
+  }
+  [b2]::after{
+    content : "";
+    left : 10px;
+    top : 30px;
+  }
+  [b2]::before{
+    content : "";
+    top : 30px;
+    left : 40px;
+  }
+  [n]{
+    position : absolute;
+    top : 176;
+    left : 190;
+    border-radius : 50px;
+    background : #191919;
+    height : 20px;
+    width : 20px;
+  }
+</style>
