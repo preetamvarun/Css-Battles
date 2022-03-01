@@ -1,0 +1,40 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<style>
+  body{
+    background : #F5D6B4;
+  }
+  [a],[b],[c]{
+    width: 60px;
+    height: 60px;
+    border : 20px solid;
+    border-color : #D86F45 transparent transparent #D86F45;
+    transform : rotate(45deg);
+    border-radius : 100px;
+    position : absolute;
+    top : 100px;
+    left : 150px;
+  }
+  [b],[c]{
+    border-color : transparent #D86F45 #D86F45 transparent;
+    left : 70px;
+  }
+  [c]{
+    left : 230px;
+  }
+  [b]::after,[c]::after{
+    position :absolute;
+    content : "";
+    height : 20px;
+    width : 20px;
+    background : #D86F45;
+    border-radius : 100px;
+    top : 48px;
+    left : -9px;
+  }
+  [c]::after{
+    top : -9px;
+    left : 48px;
+  }
+</style>
