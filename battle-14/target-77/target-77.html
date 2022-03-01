@@ -1,0 +1,89 @@
+<div o1></div>
+<div o2></div>
+<div o3></div>
+<div o4></div>
+<div h1></div>
+<div h2></div>
+<div h3></div>
+<div h4></div>
+<style>
+
+  body{
+    background : #191919;
+  }
+
+  *{
+    margin : 0rem;
+  }
+  
+  [h1],[h2],[h3],[h4]{
+    position : absolute;
+    border : 6px solid #FE5F55;
+    top : 89;
+    left : 104;
+    width : 50px;
+    transform: scaleY(.88);
+  }
+  
+  [h2]{
+    left : 244;
+    top : 88.8;
+    transform : scaleY(.82);
+    width : 18.5px;
+    border-color : #A64942;
+  }
+  
+  [h3],[h4]{
+    left : 310;
+    width : 22.5px;
+    transform : scaleY(.82);
+    top : 88.5;
+  }
+
+  [h4]{
+    top : 108.5px;
+  }
+  
+  [o1],[o2],[o3],[o4]{
+    height : 40px;
+    width : 50px;
+    border-radius : 50%;
+    background : #FE5F55;
+    position : relative;
+    top : 170px;
+    left : 55px;
+  }
+  
+  [o1]::after,[o2]::after,[o3]::after,[o4]::after{
+    content : "";
+    right : -1px;
+    top : -80px;
+    border : 6px solid #FE5F55;
+    height : 90px;
+    transform : scaleX(.85);
+    position : absolute;
+    z-index : -1;
+    border-radius : 0px 0px 3px 2px;
+  }
+
+  [o3]::after{
+    border-color : #A64942;
+  }
+  
+  [o2]{
+    left : 125px;
+    top : 130px;
+  }
+
+  [o3]{
+    top : 90px;
+    left : 195px;
+    background : #A64942;
+  }
+  
+  [o4]{
+    top : 50px;
+    left : 265px;
+  }
+  
+</style>
