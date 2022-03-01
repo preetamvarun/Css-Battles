@@ -1,0 +1,61 @@
+<div h></div>
+<div c></div>
+<div d></div>
+<style>
+  
+  body{
+    background : #293462;
+  }
+  
+  *{
+    margin : 0rem;
+    box-sizing : border-box;
+  }
+  
+  [h]{
+    height : 58px;
+    width : 270px;
+    margin : auto;
+    border : 10px solid #FFF1C1;
+    border-radius : 50px;
+    position : relative;
+    top : 100px;
+    padding : 20px;
+  }
+  
+  [c]{
+    width : 150px;
+    height : 100px;
+    background : #FFF1C1;
+    border-radius : 0px 0px 50px 50px;
+    top : 30%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    position : relative;
+  }
+  
+  [c]::after,[c]::before{
+    position : absolute;
+    content : "";
+    border : 5px solid #FE5F55;
+    width : 30px;
+    border-radius : 10px;
+    top : 20px;
+    left : 20px;
+  }
+  
+  [c]::before{
+    top : 40px;
+  }
+  
+  [d]{
+    height : 40px;
+    width : 40px;
+    background : #FE5F55;
+    border-radius : 100px;
+    left : 215px;
+    top : -20px;
+    position : relative;
+  }
+  
+</style>
