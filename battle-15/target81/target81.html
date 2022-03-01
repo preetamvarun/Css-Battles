@@ -1,0 +1,46 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<div d></div>
+<style>
+  body{
+    background : #191919;
+  }
+  *{
+    margin : 0rem;
+  }
+  [a],[b],[c],[d]{
+    width: 75px;
+    height: 75px;
+    border-radius : 50%;
+    background : transparent;
+    position : relative;
+    top : 125px;
+    left : 40px;
+    box-shadow : inset 0px 0px 0px 18.8px #714B67;
+    transform : scale(1.06);
+  }
+  [b],[c],[d]{
+    top : 50px;
+    left : 121px;
+    box-shadow : inset 0px 0px 0px 18.8px #8F8F8F;
+  }
+  [b]::after{
+    position : absolute;
+    content : "";
+    border : 10px solid #8F8F8F;
+    right : -0.667px;
+    height : 52px;
+    top : -22px;
+    border-radius : 10px;
+    transform : scale(.95);
+  }
+  [c]{
+    top : -25px;
+    left : 203px;
+  }
+  [d]{
+    top : -100px;
+    left : 285px;
+  }
+</style>
