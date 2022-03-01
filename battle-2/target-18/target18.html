@@ -1,0 +1,58 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<div d></div>
+<div e></div>
+<div f></div>
+<div g></div>
+<div h></div>
+<div i></div>
+<div j></div>
+<div k></div>
+<div l></div>
+<style>
+  body{
+    background : #5C434C;
+  }
+  :root{
+    --b1 : transparent transparent transparent #F09462;
+    --b2 : transparent transparent transparent #F5D6B4;
+  }
+  *{
+    margin : 0rem;
+  }
+  [a],[b],[c],[d],[e],[f],[g],[h],[i],[j],[k],[l]{
+    border : 75px solid;
+    border-radius : 50%;
+    border-color : var(--b1);
+    transform : rotate(45deg) scale(1.07);
+    position : absolute;
+    top : 15px;
+    left : 15px;
+  }
+  [b],[d],[j],[f]{
+    left : 115px;
+    border-color : var(--b2);
+  }
+  [c],[k],[g]{
+    left : 215px;
+  }
+  [d],[l],[h]{
+    left : 315px;
+  }
+  [e],[f],[g],[h]{
+    top : 115px;
+  }
+  [f]{
+    border-color : var(--b1);
+  }
+  [e],[g]{
+    border-color : var(--b2);
+  }
+  [i],[j],[k],[l]{
+    top : 215px;
+  }
+  [l]{
+    border-color : var(--b2);
+  }
+</style>
