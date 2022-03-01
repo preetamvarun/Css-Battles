@@ -1,0 +1,53 @@
+<div b>
+    <div s></div>
+  </div>
+  <style>
+    body{
+      background : #191919;
+    }
+    *{
+      margin : 0rem;
+    }
+    [b]{
+      width: 150px;
+      height: 200px;
+      background: #dd6b4d;
+      border-radius : 100px 100px 28px 28px;
+      position : relative;
+      top : 50px;
+      left : 125px;
+      background : #F2AD43;
+      overflow : hidden;
+    }
+    [b]::after,[b]::before{
+      position : absolute;
+      content : "";
+      height : 200px;
+      width : 170px;
+      padding-right : 28px;
+      border-radius : 50%;
+      background : #E08027;
+      bottom : 0;
+      transform : translateX(-50%) translateY(50%);
+      z-index : 2;
+    }
+    [b]::before{
+      transform : translateX(26%) translateY(50%);
+      background : #824B20;
+      z-index : 3;
+      padding-right : 23.5px;
+    }
+    [s]{
+      background : #FFF58F;
+      position : absolute;
+      height : 55px;
+      width : 55px;
+      background : #FFF58F;
+      top : 118.5px;
+      left : 50%;
+      transform : translate(-50%,-50%) scale(1.06);
+      border-radius : 100px 100px 10px 10px;
+      z-index : 1;
+    }
+  </style>
+  
