@@ -1,0 +1,39 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<div d></div>
+<style>
+  *{
+    margin : 0rem;
+  }
+  body{
+    background : #F2F2B6;
+  }
+[a],[b]{
+    width : 0px;
+    transform : scaleY(2.6) scaleX(1.5);
+    border : 50px solid;
+    border-color : #FF6D00 transparent transparent transparent;
+    position : absolute;
+    left : 85px;
+    top : 165px;
+  }
+  [b]{
+    left : 105px;
+    border-color : #FD4602 transparent transparent transparent;
+    z-index : -1;
+  }
+  [c],[d]{
+    position : absolute;
+    top : 35px;
+    left : 195px;
+    transform : scaleY(2.6) scaleX(1.5);
+    border : 50px solid;
+    border-color : transparent transparent #FD4602 transparent;
+  }
+  [d]{
+    left : 215px;
+    border-color : transparent transparent #FF6D00 transparent;
+    z-index : -1;
+  }
+</style>
